@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meghalaya State Commission for Protection of Child Rights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.344.0/dist/umd/lucide-icons.min.js">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-body .row {
+      justify-content: center;
+    }
+
+    .header {
+      background-color: #f8f9fa;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      max-width: auto;
+      /* Set the same size for both emblem and logo */
+      height: auto;
+    }
+
+    .emblem {
+      max-width: auto;
+      height: 7rem;
+    }
+
+    .gradient-text {
+      font-size: 1.5rem;
+      /* Increase the size of the header text */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (min-width: 768px) {
+      .gradient-text {
+        font-size: 2.7rem;
+        /* Increase the size of the header text for larger screens */
+      }
+
+      .emblem {
+        max-width: 250px;
+        /* Increase the size of the emblem and logo for larger screens */
+        padding-left: 6rem;
+      }
+
+      .logo {
+        max-width: auto;
+        padding-right: 6rem;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .header .container {
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+      }
+
+      .gradient-text {
+        font-size: 20px;
+        text-align: center;
+        width: auto;
+
+
+      }
+
+      .logo {
+        height: 4.2rem;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .emblem {
+        width: 28%;
+        height: 4rem;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+
+    .brand__area-eight {
+      background: var(--tg-heading-color);
+      padding: 55px 0;
+    }
+
+    .swiper-container-pointer-events {
+      touch-action: pan-y;
+    }
+
+  </style>
+</head>
+
+<body>
+
+ 
+<!-- Accessibility Bar -->
+<div class="accessibility-bar">
+  <div class="accessibility-container">
+      <div class="accessibility-right">
+          <a href="#main-content" id="skip-to-content" class="accessibility-btn">Skip To Main Content</a>
+          <button id="btn-increase" class="accessibility-btn">A+</button>
+          <button id="btn-decrease" class="accessibility-btn">A-</button>
+          <button id="btn-increase-spacing" class="accessibility-btn">←→+</button>
+          <button id="btn-decrease-spacing" class="accessibility-btn">←→-</button>
+      </div>
+  </div>
+</div>
+
+    <!-- Header -->
+    <header class="header py-4">
+      <div class="container-head">
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Indian Emblem"
+            class="emblem">
+          <a href="index.html" class="text-decoration-none">
+            <h1 class="text-center mx-2 gradient-text">Meghalaya State Commission for Protection of Child Rights</h1>
+          </a>
+
+          <img src="child.png" alt="logo" class="logo">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse text-white" id="navbarContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html"><i class="bi bi-house-door text-white"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html"><i class="bi bi-info-circle text-white"></i> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html"><i class="bi bi-telephone text-white"></i> Contact
+                Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="sitemap.html"><i class="bi bi-map text-white"></i> Sitemap</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Report a Concern Button (Outside the Navbar Collapse) -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#reportModal">
+            <i class="bi bi-exclamation-triangle"></i> Report a Concern
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Image Gallery -->
+    <div class="gallery-container position-relative">
+      <div class="gallery">
+        <img src="people.jpg" class="active" alt="">
+        <img src="people6.jpg" alt="">
+        <img src="people7.jpg" alt="">
+        <img src="people9.jpg" alt="">
+        <img src="people8.jpg" alt="">
+
+      </div>
+      <button class="gallery-nav prev" onclick="prevImage()">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="gallery-nav next" onclick="nextImage()">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <div id="main-content" tabindex="-1">
+    <div class="about-section">
+      <div class="container py-5">
+        <div class="row">
+          <!-- About Us Text -->
+          <div class="col-lg-6">
+            <div class="about-us-text">
+              <h2 class="display-4 fw-bold mb-4">Welcome to Meghalaya State Commission for Protection of Child Rights
+              </h2>
+              <p class="fs-5">
+                With the aim of effectively addressing the issue of protection of Child Rights in Meghalaya,
+                the State Commission for Protection of Child Rights was set up. The M.S.C.P.C.R. from its
+                inception in 2014 is committed in upholding the spirit of our constitution by protecting and
+                promoting the Rights of children.
+              </p>
+              <a href="about.html" class="btn btn-primary btn-lg px-5 read-more-btn">Read More</a>
+
+
+
+            </div>
+          </div>
+
+          <!-- Quick Links Widgets -->
+          <div class="col-lg-6">
+            <h3 class="section-title">Quick Links</h3>
+            <div class="quick-links-grid">
+              <!-- Who's Who -->
+              <a href="who.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="widget-box">
+                  <i class="bi bi-people-fill icon"></i>
+                  <h4 class="widget-title">Who's Who</h4>
+                </div>
+              </a>
+
+
+              <!-- Acts -->
+              <a href="acts.html" class="widget-link">
+                <div class="widget-box">
+                  <i class="bi bi-journal-text icon"></i>
+                  <h4 class="widget-title">Acts</h4>
+                </div>
+              </a>
+
+              <!-- Activities -->
+              <a href="reports.html" class="widget-link">
+                <div class="widget-box">
+                  <i class="bi bi-calendar-event icon"></i>
+                  <h4 class="widget-title">Annual Reports</h4>
+                </div>
+              </a>
+
+
+              <!-- Photo Gallery -->
+              <a href="gallery.html" class="widget-link">
+                <div class="widget-box">
+                  <i class="bi bi-images icon"></i>
+                  <h4 class="widget-title">Photo Gallery</h4>
+                </div>
+              </a>
+
+              <!-- News -->
+              <a href="news.html" class="widget-link">
+                <div class="widget-box">
+                  <i class="bi bi-newspaper icon"></i>
+                  <h4 class="widget-title">News</h4>
+                </div>
+              </a>
+
+              <!-- Contact Us -->
+              <a href="contact.html" class="widget-link">
+                <div class="widget-box">
+                  <i class="bi bi-telephone icon"></i>
+                  <h4 class="widget-title">Contact Us</h4>
+                </div>
+              </a>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- News Section -->
+
+    <style>
+      .latest-news-container {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: #ffffff;
+        height: 49px;
+        
+        
+
+      }
+      .latest-news-label {
+        font-weight: bold;
+        background-color: #0ab97f;
+        color: white;
+        padding: 10px 15px;
+        font-size: 20px;
+        white-space: nowrap;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        
+        
+        
+      }
+      .latest-news-marquee-container {
+        flex-grow: 1;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
+      .latest-news-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        transition: transform 6s ease-in-out;
+      }
+      .latest-news-item {
+        min-width: 100%;
+        text-align: center;
+        padding: 10px;
+        word-wrap: break-word; /* Allows long words to break and wrap */
+        overflow-wrap: break-word;
+        white-space: normal; /* Allows text to wrap */
+        
+      }
+      .latest-news-list li a {
+        text-decoration: none;
+        color: #17326b;
+        font-weight: bold;
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+
+    .view-all-button {
+    background-color: #0ab97f;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 13px;
+    height: 49px;
+  }
+  .view-all-button:hover {
+    background-color: #089166;
+    color: white;
+  }
+  .new-icon {
+    font-weight: bold;
+  font-size: 12px;
+  color: white;
+  background: linear-gradient(90deg, #ff4e50, #fc913a, #f9d423);
+  background-size: 200% 200%;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: nowrap; /* Prevents wrapping */
+  animation: gradientShift 3s infinite linear;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+    
+      /* Mobile Optimization */
+      @media screen and (max-width: 768px) {
+        .latest-news-container {
+          flex-direction: column;
+          align-items: flex-start;
+          height: auto;
+          background-color: #17326b;
+          
+        }
+        .latest-news-label {
+          width: 100%;
+          text-align: left;
+          padding: 10px;
+          font-size: 18px;
+          color: #17326b;
+          background-color: white;
+        }
+        .latest-news-marquee-container {
+          width: 100%;
+          margin-top: 5px;
+        }
+        .latest-news-item {
+          min-width: 100%; /* Show only one title at a time */
+          text-align: left;
+          padding: 10px;
+          color: white;
+        }
+        .latest-news-list li a {
+        text-decoration: none;
+        color: #ffffff;
+       
+      }
+      .view-all-button {
+      display: none;
+    }
+      }
+    </style>
+    
+    <div class="latest-news-container col-12 mb-0">
+      <p class="latest-news-label">In The News</p>
+      <div class="latest-news-marquee-container" id="newsContainer">
+        <ul class="latest-news-list" id="latest-news-list">
+          <li class="latest-news-item">
+            <a href="notice/notice.pdf" target="_blank">
+              Smt. Agatha K. Sangma Appointed As Chairperson Of Meghalaya State Commission For Protection Of Child Rights
+              <span class="new-icon">NEW</span>
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://www.msn.com/en-in/news/India/meghalaya-cm-s-sister-takes-charge-as-chairperson-of-state-child-rights-panel/ar-AA1tBBVY?ocid=BingNewsVerp" target="_blank">
+              Meghalaya CM's sister takes charge as chairperson of state child rights panel (msn.com)
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://meghalayamonitor.com/agatha-assumes-office-as-child-rights-panel-chief-two-months-after-appointment/" target="_blank">
+              Agatha assumes office as child rights panel chief two months after appointment - Meghalaya Monitor
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://theshillongtimes.com/2024/03/04/pocso-act-in-khasi-hailed/" target="_blank">
+              POCSO Act in Khasi hailed | The Shillong Times
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://mawphor.com/haduh-2566-ngut-ki-khynnah-ba-shah-leh-bor-ha-meghalaya/" target="_blank">
+              Haduh 2566 ngut ki Khynnah ba shah leh bor ha Meghalaya - Mawphor
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a  href="https://www.sentinelassam.com/north-east-india-news/meghalaya-news/meghalaya-sensitization-workshop-held-on-prevention-and-combating-child-trafficking" target="_blank">
+              Meghalaya: Sensitization workshop held on ‘Prevention and Combating Child Trafficking’ (sentinelassam.com)
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://meghalayadaily.in/2024/06/29/world-day-against-human-trafficking-national-commission-for-protection-of-child-rights-ncpcr/" target="_blank">
+              World Day Against Human Trafficking, National Commission for Protection of Child Right(NCPCR) - MEGHALAYA DAILY
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://highlandpost.com/workshop-held-at-ampati-to-sensitise-stakeholders-on-child-trafficking/" target="_blank">
+              Workshop held at Ampati to sensitise stakeholders on child trafficking | Highland Post
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://theshillongtimes.com/2024/06/21/stakeholders-discuss-ways-to-tackle-child-trafficking/" target="_blank">
+              Stakeholders discuss ways to tackle child trafficking | The Shillong Times
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://hubnetwork.in/ncpcr-conducts-sensitization-workshop-on-child-trafficking-in-ampati/" target="_blank">
+              NCPCR conducts sensitization workshop on child trafficking in Ampati (hubnetwork.in)
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://theshillongtimes.com/2024/12/10/mhrc-celebrates-76th-year-of-udhr/" target="_blank">
+              MHRC celebrates 76th year of UDHR | The Shillong Times
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://www.facebook.com/watch/?v=5893236117465228" target="_blank">
+              The Meghalaya police organised a one-day state-level conference on anti-human trafficking at the State Convention Centre here on Friday. The objective of... | By DD News Meghalaya | Facebook
+            </a>
+          </li>
+          <li class="latest-news-item">
+            <a href="https://mawphor.com/sngew-shyrkhei-khynnah-9-10-snem-ki-la-tip-lut-ia-ki-kam-jaboh-lap-ka-child-rights-commission/" target="_blank">
+              Sngew shyrkhei, khynnah 9, 10 snem ki la tip lut ïa ki kam jaboh, lap ka Child Rights Commission - Mawphor
+            </a>
+          </li>
+      </div>
+      <a href="news.html" class="view-all-button">View All</a>
+        </ul>
+      </div>
+    </div>
+    
+    <script>
+      let newsList = document.getElementById("latest-news-list");
+      let newsContainer = document.getElementById("newsContainer");
+      let index = 0;
+      let totalItems = document.querySelectorAll(".latest-news-item").length;
+      let interval;
+    
+      function showNextItem() {
+        if (index < totalItems - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
+        let offset = -index * 100;
+        newsList.style.transition = "transform 6s ease-in-out";
+        newsList.style.transform = `translateX(${offset}%)`;
+      }
+    
+      function startScrolling() {
+        interval = setInterval(showNextItem, 9000);
+      }
+    
+      function stopScrolling() {
+        clearInterval(interval);
+      }
+    
+      // Start scrolling
+      startScrolling();
+    
+      // Pause scrolling on hover
+      newsContainer.addEventListener("mouseenter", stopScrolling);
+      newsContainer.addEventListener("mouseleave", startScrolling);
+    </script>
+    
+    
+    <!-- Annual Report Part -->
+    <div class="annual-reports containers py-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-white">Annual Reports</h2>
+        <!-- <a href="reports.html" class="btn btn-primary view-all-btn">View All</a> -->
+      </div>
+
+      <div class="position-relative">
+        <!-- Left scroll button -->
+        <button class="annual-reports-nav-btn annual-reports-nav-left" onclick="scrollAnnualReports('left')"
+          style="position: absolute; top: 15rem; left: 10px; width: 45px; height: 45px; background-color: #ffffff; color: rgb(68, 67, 67); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Cards container -->
+        <div class="annual-reports-container" id="annualReportsContainer">
+          <!-- Annual Report cards will be inserted here by JavaScript -->
+          <div class="annual-report-card">
+            <div class="annual-report-thumbnail">
+              <img src="people.jpg" alt="Annual Report Thumbnail">
+            </div>
+            <div class="annual-report-content">
+              <h3 class="annual-report-title"></h3>
+              <a href="path/to/pdf" class="view-pdf-btn">View PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right scroll button -->
+        <button class="annual-reports-nav-btn annual-reports-nav-right" onclick="scrollAnnualReports('right')"
+          style="position: absolute; top: 15rem; right: 10px; width: 45px; height: 45px; background-color: #ffffff; color: rgb(68, 67, 67); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <style>
+      @media (max-width: 768px) {
+        .annual-reports-nav-btn {
+          display: none !important;
+        }
+      }
+    </style>
+
+    <!-- Acts Part -->
+    <style>
+      @media (max-width: 768px) {
+        .acts-nav-btn {
+          display: none !important;
+        }
+
+        .act-card {
+          flex: 0 0 85%;
+          
+          /* Ensure multiple cards are visible but scrollable */
+        }
+        
+      }
+
+      /* Acts container styling */
+      .acts-container {
+        display: flex;
+        gap: 50px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 40px 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;  
+        
+      }
+
+      .acts-container::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar for WebKit browsers */
+      }
+
+      /* Card styling */
+      .act-card {
+        flex: 0 0 300px;
+        /* Set a fixed width for cards */
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 13px;
+        height: 500px;
+        /* Increased height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      /* Thumbnail styling */
+      .act-thumbnail {
+        width: 100%;
+        height: 180px;
+        /* Increased height */
+        object-fit: cover;
+        /* Ensures images fit inside while maintaining aspect ratio */
+        border-radius: 5px;
+      }
+
+      /* Act title styling */
+      .act-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin-top: 10px;
+        word-wrap: break-word;
+        /* Allows long titles to wrap */
+        white-space: normal;
+        /* Enables text wrapping */
+      }
+
+      /* View PDF button */
+      .view-pdf-btn {
+        display: block;
+        margin-top: auto;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .view-pdf-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+
+
+    <div class="acts containers py-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-white">Acts</h2>
+        <!-- <a href="acts.html" class="btn btn-primary view-all-btn">View All</a> -->
+      </div>
+
+      <div class="position-relative">
+        <!-- Left scroll button -->
+        <button class="acts-nav-btn acts-nav-left" onclick="scrollActs('left')"
+          style="position: absolute; top: 15rem; left: 10px; width: 45px; height: 45px; background-color: #ffffff; color: rgb(68, 67, 67); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Cards container -->
+        <div class="annual-reports-container" id="actsContainer">
+
+          <div class="act-card">
+            <div class="act-thumbnail">
+              <img src="people.jpg" alt="Act Thumbnail">
+            </div>
+            <div class="act-content">
+              <h3 class="act-title"></h3>
+              <a href="path/to/pdf" class="view-pdf-btn">View PDF</a>
+            </div>
+          </div>
+
+          <!-- More act cards will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Right scroll button -->
+        <button class="acts-nav-btn acts-nav-right" onclick="scrollActs('right')"
+          style="position: absolute; top: 15rem; right: 10px; width: 45px; height: 45px; background-color: #ffffff; color: rgb(68, 67, 67); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="custom-offset">
+      <div class="min-vh-90 bg-light py-5">
+        <h1 class="text-center mb-4"></h1>
+        <div class="container">
+          <div class="row g-4">
+            <!-- Left side - Video Gallery -->
+            <div class="col-md-8">
+              <div class="row g-4 mb-4">
+                <!-- Video 1 -->
+                <div class="col-6">
+                  <div class="video-thumbnail" onclick="openVideo('Kj0aFryKPHg')">
+                    <img src="https://img.youtube.com/vi/Kj0aFryKPHg/0.jpg" alt="Video 1"
+                      class="img-fluid rounded shadow">
+
+                  </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="col-6">
+                  <div class="video-thumbnail" onclick="openVideo('qiAd5Xk3Ckc')">
+                    <img src="https://img.youtube.com/vi/qiAd5Xk3Ckc/maxresdefault.jpg" alt="Video 2"
+                      class="img-fluid rounded shadow">
+                  </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="col-6">
+                  <div class="video-thumbnail" onclick="openVideo('vOLf3U8G2F8')">
+                    <img src="https://img.youtube.com/vi/vOLf3U8G2F8/maxresdefault.jpg" alt="Video 3"
+                      class="img-fluid rounded shadow">
+                  </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="col-6">
+                  <div class="video-thumbnail" onclick="openVideo('mx8Y4LhnVmw')">
+                    <img src="https://img.youtube.com/vi/mx8Y4LhnVmw/maxresdefault.jpg" alt="Video 4"
+                      class="img-fluid rounded shadow">
+                  </div>
+                </div>
+              </div>
+              <a href="https://www.youtube.com/@TOTHELIGHT_MSCPCR" target="_blank" rel="noopener noreferrer"
+                class="btn btn-danger d-inline-flex align-items-center gap-2">
+                View More on YouTube
+              </a>
+            </div>
+
+            <!-- Right side - Facebook Feed -->
+            <div class="col-md-4 facebook-section">
+
+              <div class="fb-page"
+                data-href="https://www.facebook.com/Meghalaya-State-Commission-for-the-Protection-of-Child-Rights-104927912084590"
+                data-tabs="timeline" data-width="340" data-height="570" data-small-header="false"
+                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              </div>
+
+            </div>
+
+            <script async defer crossorigin="anonymous"
+              src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0">
+              </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Concern Modal -->
+    <div class="modal fade" id="reportModal" tabindex="-1">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 position-absolute end-0 top-0 z-3">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="container-fluid">
+              <div class="row g-4 justify-content-center align-items-stretch">
+                <!-- Emergency Services Card -->
+                <div class="col-12 col-md-4">
+                  <div class="card h-100 bg-primary bg-opacity-10 border-0">
+                    <div class="card-body d-flex flex-column p-4">
+                      <h3 class="card-title h5 text-primary mb-4">Emergency Services</h3>
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3 d-flex align-items-center">
+                          <svg class="me-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          Child Helpline: <a href="tel:1098" class="text-primary ms-1 fw-semibold">1098</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                          <svg class="me-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          Ambulance: <a href="tel:108" class="text-primary ms-1 fw-semibold">108</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                          <svg class="me-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          Police: <a href="tel:112" class="text-primary ms-1 fw-semibold">112</a> / <a href="tel:100"
+                            class="text-primary fw-semibold">100</a>
+                        </li>
+
+                        <li class="d-flex align-items-center">
+                          <svg class="me-2 text-primary" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          Women Helpline: <a href="tel:181" class="text-primary ms-1 fw-semibold">181</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Child Abuse/Exploitation Card -->
+                <div class="col-12 col-md-4">
+                  <div class="card h-100 bg-danger bg-opacity-10 border-0">
+                    <div class="card-body d-flex flex-column p-4">
+                      <h3 class="card-title h5 text-danger mb-4">Child Abuse/Exploitation</h3>
+                      <p class="card-text mb-4">If you have credible information about abuse or exploitation of a child, or are concerned a
+                        child/youth is being victimized.<br> <br>
+                        Lada phi don jingtip tikna ba don ki khynnah ba shah
+                        banbein/lehbein sngewbha phone harum.<br> <br>
+                        Nang.o, bi.sarangko onggija dake ba ua bi.sarangko
+                        doka sata dakanirangni gimin ba saoba chadamderangko ong.gija dakanirangko ma.siani
+                        dongode, Ka.mao on.gipao agane on.bo</p>
+                      <div class="d-flex gap-3 mt-auto justify-content-center">
+                        <a href="mailto:concern@mscpcr.gov.in" class="btn btn-danger d-inline-flex align-items-center">
+                          <svg class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                          </svg>
+                          Email
+                        </a>
+                        <a href="tel:1098" class="btn btn-danger d-inline-flex align-items-center">
+                          <svg class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          Call
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Related Services Card -->
+                <div class="col-12 col-md-4">
+                  <div class="card h-100 bg-success bg-opacity-10 border-0">
+                    <div class="card-body d-flex flex-column p-4">
+                      <h3 class="card-title h5 text-success mb-4">Related Services</h3>
+                      <ul class="list-unstyled mb-0 small">
+                        <li class="mb-3 d-flex">
+                          <svg class="me-2 flex-shrink-0 mt-1 text-success" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          <span>Anti Human Trafficking Unit (AHTU) Shillong: <a href="tel:03642226185"
+                              class="text-success fw-semibold">0364-2226185</a></span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                          <svg class="me-2 flex-shrink-0 mt-1 text-success" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          <span>CM Connect: <a href="tel:1971" class="text-success fw-semibold">1971</a></span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                          <svg class="me-2 flex-shrink-0 mt-1 text-success" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          <span>Sustainable Transport and Efficient Mobility Society (STEMs): <a href="tel:03643500097"
+                              class="text-success fw-semibold">03643500097</a>, <a href="tel:03643500098"
+                              class="text-success fw-semibold">03643500098</a></span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                          <svg class="me-2 flex-shrink-0 mt-1 text-success" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          <span>Meghalaya State Legal Services Authority: <a href="tel:03642501051"
+                              class="text-success fw-semibold">0364-2501051</a></span>
+                        </li>
+                        <li class="mb-3 d-flex">
+                          <svg class="me-2 flex-shrink-0 mt-1 text-success" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                          </svg>
+                          <span>Cybercrime: <a href="tel:1930" class="text-success fw-semibold">1930</a></span>
+                        </li>
+                        <li class="d-flex">
+                          <svg class="me-2 flex-shrink-0 mt-1 text-success" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20" />
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z" />
+                          </svg>
+                          <span>You can also approach your own <a href="https://www.megsocialwelfare.gov.in/icps_dcpu.html" target="_blank"
+                              class="text-success fw-semibold">District Child Protection Officers</a> in their offices
+                            across all districts</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activities Grid -->
+    <div class="activity-container py-5">
+      <div class="section-header d-flex justify-content-between align-items-center mb-4">
+        <h2 class="center-mobile text-black">Activities</h2>
+
+        <a href="gallery.html" class="btn btn-primary view-all-btn">View All</a>
+      </div>
+
+      <div class="row g-4 activities-grid">
+        <!-- Activity Card 1 -->
+        <div class="col-md-6 col-lg-4 activity-item">
+          <div class="activity-card position-relative overflow-hidden">
+            <img src="pics for web/Awareness on JJAct Early Marriage and Other Child Issues (3).jpg" alt=""
+              class="img-fluid">
+            <div class="activity-overlay">
+              <h3></h3>
+            </div>
+            <div class="activity-description">
+              <p>Awareness on JJAct Early Marriage and Other Child Issues</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 2 -->
+        <div class="col-md-6 col-lg-4 activity-item">
+          <div class="activity-card position-relative overflow-hidden">
+            <img src="pics for web/International Day for Persons with Disabilities.jpg" alt="Community Outreach"
+              class="img-fluid">
+            <div class="activity-overlay">
+              <h3></h3>
+            </div>
+            <div class="activity-description">
+              <p>International Day for Persons with Disabilities</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Card 3 -->
+        <div class="col-md-6 col-lg-4 activity-item">
+          <div class="activity-card position-relative overflow-hidden">
+            <img src="pics for web/Traning for Safe and Secure transport in collaboration with NCPCR.jpg"
+              alt="Workshop Series" class="img-fluid">
+            <div class="activity-overlay">
+              <h3></h3>
+            </div>
+            <div class="activity-description">
+              <p>Traning for Safe and Secure transport in collaboration with NCPCR</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Mobile View All Button (shown only on mobile) -->
+      <div class="text-center mt-4 mobile-view-all">
+        <a href="gallery.html" class="btn btn-primary">View All</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+    
+
+    <!-- Floating Social Icons -->
+    <div class="floating-icons d-none d-md-flex">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/Meghalaya-State-Commission-for-the
+  Protection-of-Child-Rights-104927912084590" target="_blank" rel="noopener noreferrer" class="floating-icon facebook"
+        aria-label="Facebook" title="Visit our Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/c/TOTHELIGHT_MSCPCR" target="_blank" rel="noopener noreferrer"
+        class="floating-icon youtube" aria-label="YouTube" title="Watch us on YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <!-- Website
+      <a href="https://ncpcr.gov.in" target="_blank" rel="noopener noreferrer" class="floating-icon website"
+        aria-label="Website" title="Visit NCPCR website">
+        <i class="fa-solid fa-globe"></i>
+      </a> -->
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="script.js"></script>
+    <script src="security.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0">
+    </script>
+    
+</body>
+
+</html>

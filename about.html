@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meghalaya State Commission for Protection of Child Rights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.344.0/dist/umd/lucide-icons.min.js">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-body .row {
+      justify-content: center;
+    }
+    .header {
+      background-color: #f8f9fa;
+      padding: 1rem 0;
+    }
+    .logo {
+      max-width: auto; /* Set the same size for both emblem and logo */
+      height: auto;
+    }
+    .emblem{
+      max-width: auto;
+      height: 7rem;
+    }
+    .gradient-text {
+      font-size: 1.5rem; /* Increase the size of the header text */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media (min-width: 768px) {
+      .gradient-text {
+        font-size: 2.7rem; /* Increase the size of the header text for larger screens */
+      }
+      .emblem{
+        max-width: 250px; /* Increase the size of the emblem and logo for larger screens */
+        padding-left: 6rem;
+      }
+
+      .logo{
+        max-width: auto;
+        padding-right: 6rem;
+      }
+    }
+
+        @media (max-width: 767.98px) {
+          .header .container {
+            padding-left: 0;
+            padding-right: 0;
+            position: relative;
+          }
+
+          .gradient-text {
+            font-size: 20px;
+            text-align: center;
+            width: auto;
+            
+            
+          }
+
+          .logo {
+            height: 4.2rem;
+            margin-left: 0;
+            padding-left: 0;
+          }
+
+          .emblem {
+            width: 28%;
+            height: 4rem;
+            margin-right: 0;
+            padding-right: 0;
+          }
+        }
+      
+
+  </style>
+</head>
+<body>
+   
+ <!-- Accessibility Bar -->
+<div class="accessibility-bar">
+  <div class="accessibility-container">
+      <div class="accessibility-right">
+          <a href="#main-content" id="skip-to-content" class="accessibility-btn">Skip To Main Content</a>
+          <button id="btn-increase" class="accessibility-btn">A+</button>
+          <button id="btn-decrease" class="accessibility-btn">A-</button>
+          <button id="btn-increase-spacing" class="accessibility-btn">←→+</button>
+          <button id="btn-decrease-spacing" class="accessibility-btn">←→-</button>
+      </div>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div id="main-content">
+  <!-- Header -->
+  <header class="header py-4">
+    <div class="container-head">
+      <div class="d-flex justify-content-between align-items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Indian Emblem" class="emblem">
+        <a href="index.html" class="text-decoration-none">
+          <h1 class="text-center mx-2 gradient-text">Meghalaya State Commission for Protection of Child Rights</h1>
+      </a>
+      
+        <img src="child.png" alt="logo" class="logo">
+      </div>
+    </div>
+  </header>
+  
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+  
+    
+    
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse text-white" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html"><i class="bi bi-house-door text-white"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html"><i class="bi bi-info-circle text-white"></i> About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html"><i class="bi bi-telephone text-white"></i> Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="sitemap.html"><i class="bi bi-map text-white"></i> Sitemap</a>
+        </li>
+      </ul>
+    </div>
+
+    
+    
+  </div>
+</nav>
+
+<style>
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+  }
+  .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+  }
+  .card-body {
+      padding: 2rem;
+  }
+  h1{
+      font-size: 2.5rem;
+      
+      color: black;
+  }
+  h2, h3 {
+      font-weight: 600;
+      color: #0056b3;
+  }
+  p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+  }
+  .list-group-item {
+      border: none;
+      background-color: transparent;
+      padding-left: 0;
+  }
+  .list-unstyled li {
+      margin-bottom: 0.75rem;
+  }
+  .section-title {
+      border-bottom: 3px solid #0056b3;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      display: inline-block;
+  }
+  .card.bg-light {
+      background-color: #eef2f6;
+      border-left: 5px solid #0056b3;
+  }
+</style>
+</head>
+<body>
+
+  <main class="my-5">
+    <div id="main-content" tabindex="-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        
+                        <h1 class="text-center mb-4">About Us</h1>
+
+                        <!-- Introduction -->
+                        <section class="mb-5">
+                            
+                            <p>With the aim of effectively addressing the issue of protection of Child Rights in Meghalaya, the State Commission for Protection of Child Rights was set up. The M.S.C.P.C.R. from its inception in 2014 is committed in upholding the spirit of our constitution by protecting and promoting the Rights of children. This Commission stands for the cause of ensuring a protective child friendly environment for all children from the age of 0 to 18 years of age. For the Commission, all the Rights of children are of equal importance. 
+                              The Commission comprise of a Chairperson and six members including two women representatives. The Government of Meghalaya, Social Welfare Department, vide Notification No. SW(S) 112/2009/236 dated, Shillong the 28th February, 2014 under section 4, sub-section (3) of the Commission for Protection of Child Rights Act, 2005(4th of 2006), the Governor of Meghalaya appointed Smti. Meena Kharkongor as Chairperson, State Commission for Protection of Child Rights for a period of 3(three) years with immediate effect. The Chairperson joined the Commission on 11th March, 2014 and the office was opened on the 23rd May, 2014 at Nongshiliang, Nongthymmai, Shillong with a staff strength consisting of only the Chairperson, one peon and a chowkidar. The Commission functioned from the above address till February, 2015 and thereafter shifted its office to Lower Lachumiere, Shillong. </p>
+                            
+                        </section>
+
+                        <!-- Structure of the Commission -->
+                        <section class="mb-5">
+                            <h2 class="h4">CONSTITUTION</h2>
+                            
+                               <p>The State Commission for Protection of Child Rights (S.C.P.C.R.) has been constituted by the Government of Meghalaya, under the Commission for Protection of Child Rights (C.P.C.R.) Acts, 2005 to exercise and performs the powers and functions assigned to it under C.P.C.R. Act, 2005.
+                              </p>
+                              <br>
+                              <p>The Commission consists of:</p>
+                              <ul>
+                                <li>A Chairperson who, is a person of eminence and has done a outstanding work for promoting the welfare of the children; and
+                                </li>     
+                                <li>Six Members, out of which at least two are women, from the following fields, is appointed by the Central Government from amongst person of eminence, ability, integrity, standing and experience in,
+                                </li>
+                                <li>Education</li>
+                              <li>Child Health, Care, Welfare, or Development</li>
+                              <li>Juvenile Justice or Care of Neglected/Marginalized Children</li>
+                              <li>Elimination of Child Labour or Children in Distress</li>
+                              <li>Child Psychology or Sociology</li>
+                              <li>Laws Related to Children</li>
+                              </ul>
+                                    
+                              
+                            
+                        </section>
+
+                        <!-- Functions of the Commission -->
+                        <section class="mb-5">
+                            <h2 class="h4">FUNCTIONS AND POWERS</h2>
+                            <ul>
+                                <li>The Commission shall, in addition to the functions assigned to it under clauses (a) to (j) of sub-section (1) of Section 13 of the CPCR Act, 2005 perform the following functions, namely:-
+                                </li>
+                                <li>Analyze existing law, policy and practice to assess compliance with the convention on the Rights of the Child, undertake inquiries and produce reports on any aspect of policy or practice affecting children and comment on proposed new legislation from a child rights perspective;
+                                </li>
+                                <li>Present to be State Government, annually and at such other intervals, as the commission may deem fit, reports upon working of those safeguards;
+                                </li>
+                                <li>Undertake formal investigations where concern has been expressed either by children themselves or by concerned persons on their behalf;
+                                </li>
+                                <li>Ensure that the work of the commission is directly informed by the views of children in order to reflect their priorities and perspectives;
+                                </li>
+                                <li>Promote, respect and give serious consideration to the views of children in its work;
+                                </li>
+                                <li>Produce and disseminate information about child rights;
+                                </li>
+                                <li>Compile and analyze data on children;
+                                </li>
+                                <li>Promote the incorporation of child rights into the school curriculum, teachers’ training and training of personnel dealing with children.
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Powers of the Commission -->
+                        <section class="mb-5">
+                            <h2 class="h4">POWERS</h2>
+                            <p>The Commission shall, while inquiring into any matter referred to in clause (j) of sub-section (1) of section 13 of the CPCR Act 2005, have all the powers of a civil court trying a suit under the Code of Civil Procedure, 1908 (5 of 1908) and, in particular, in respect of the following matters, namely:-
+                            </p>
+                            <ul>
+                                <li>Summoning and enforcing the attendance of any person and examining him on oath</li>
+                                <li>Discovering and production of any document;
+                                </li>
+                                <li>Receiving evidence on affidavits;
+                                </li>
+                                <li>Requisitioning any public record or copy thereof from any court or office; and</li>
+                                <li>Issuing commissions for the examination of witnesses or documents.
+                                </li>
+                            </ul>
+                            <p>The Commission shall have the power to forward any case to a Magistrate having jurisdiction to try the same and the Magistrate to whom any such case is forwarded shall proceed to hear the complaint against the accused as if the case has been forwarded to him under the section 346 of the Code of criminal procedure, 1973 (2 of 1974).
+                            </p>
+                            <ul>
+                              <li>The Commission shall prepare and publish an annual report before the 31st December, every year, for submission to the State Government
+                              </li>
+                              <li>The Commission shall also prepare special reports and publish on specific issues as and when necessary, under the direction of the Chairperson.
+                              </li>
+                              <li>The State Government shall cause the annual report and special reports of the commission to be laid before the Legislative Assembly
+                              </li>
+                              <li>A special report may be submitted to the State Government, if there is a time lag in the preparation of the annual report
+                              </li>
+                              <li>The annual report shall include information on administrative and financial matters; complaints investigated/inquired into, action taken on cases, detail of research; reviews, education and promotion efforts; consultations, detail and specific recommendations of the commission on any matter, beside any other matter that the commission may consider warranting inclusion in the report.
+                              </li>
+                            </ul>
+                          </section>
+
+                        <!-- Finance and Administration -->
+                        <section>
+                            <h2 class="h4">FINANCE</h2>
+                            <ul>
+                              <li>The Commission shall spend the sums of money received by it for the purposes of the Act.
+                              </li>
+                          <li>The Chairperson shall have all powers relating to financial transactions of the commission, except in cases which require prior approval of the State Government</li>
+                            <li>The Chairperson shall obtain prior approval of the State Government in matters of permitting any officer of the commission to participate in seminars, conferences or training programmes abroad and such other matters determined by the State Government by order
+                            </li>
+                        <li>The Chairperson shall, subject to such conditions and limitations and control and supervision, have power to delegate his financial powers to the secretary. Provided that no such powers shall be delegated in respect of incurring an expenditure on an item exceeding one lakh rupees without the prior approval of the Chairperson
+                        </li>
+                        <li>The Chairperson shall have the powers to engage any person or persons as consultant or consultants for a specific purpose and for a specific period on the terms and conditions agreed on in advance, relating to honorarium, travelling allowance and dearness allowance
+                        </li>
+                        <li>The Secretary shall have powers to execute all decisions taken by the Chairperson or any other member on his behalf, relating to financial matters.
+                        </li>
+                        </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+<script src="security.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

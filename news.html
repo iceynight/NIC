@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meghalaya State Commission for Protection of Child Rights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.344.0/dist/umd/lucide-icons.min.js">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <style>
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-body .row {
+      justify-content: center;
+    }
+
+    .header {
+      background-color: #f8f9fa;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      max-width: auto;
+      /* Set the same size for both emblem and logo */
+      height: auto;
+    }
+
+    .emblem {
+      max-width: auto;
+      height: 7rem;
+    }
+
+    .gradient-text {
+      font-size: 1.5rem;
+      /* Increase the size of the header text */
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (min-width: 768px) {
+      .gradient-text {
+        font-size: 2.7rem;
+        /* Increase the size of the header text for larger screens */
+      }
+
+      .emblem {
+        max-width: 250px;
+        /* Increase the size of the emblem and logo for larger screens */
+        padding-left: 6rem;
+      }
+
+      .logo {
+        max-width: auto;
+        padding-right: 6rem;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .header .container {
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+      }
+
+      .gradient-text {
+        font-size: 20px;
+        text-align: center;
+        width: auto;
+
+
+      }
+
+      .logo {
+        height: 4.2rem;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .emblem {
+        width: 28%;
+        height: 4rem;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+ <!-- Accessibility Bar -->
+<div class="accessibility-bar">
+  <div class="accessibility-container">
+      <div class="accessibility-right">
+          <a href="#main-content" id="skip-to-content" class="accessibility-btn">Skip To Main Content</a>
+          <button id="btn-increase" class="accessibility-btn">A+</button>
+          <button id="btn-decrease" class="accessibility-btn">A-</button>
+          <button id="btn-increase-spacing" class="accessibility-btn">←→+</button>
+          <button id="btn-decrease-spacing" class="accessibility-btn">←→-</button>
+      </div>
+  </div>
+</div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <!-- Header -->
+    <header class="header py-4">
+      <div class="container-head">
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Indian Emblem"
+            class="emblem">
+          <a href="index.html" class="text-decoration-none">
+            <h1 class="text-center mx-2 gradient-text">Meghalaya State Commission for Protection of Child Rights</h1>
+          </a>
+
+          <img src="child.png" alt="logo" class="logo">
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse text-white" id="navbarContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html"><i class="bi bi-house-door text-white"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html"><i class="bi bi-info-circle text-white"></i> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html"><i class="bi bi-telephone text-white"></i> Contact
+                Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="sitemap.html"><i class="bi bi-map text-white"></i> Sitemap</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <style>
+      .news-container {
+        width: auto;
+        height: auto;
+        margin: auto;
+        background: none;
+        padding: 30px;
+        border-radius: 1px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-title {
+        word-wrap: break-word;
+        font-size: large;
+      }
+    </style>
+
+    <div class="news-container">
+
+      <div class="list-group">
+
+        <!-- 2025 -->
+        <a href="notice/notice.pdf" target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Smt. Agatha K. Sangma Appointed As Chairperson Of Meghalaya State Commission For Protection Of Child Rights</h5>
+          <small class="text-muted">2025</small>
+        </a>
+
+        <a href="https://www.msn.com/en-in/news/India/meghalaya-cm-s-sister-takes-charge-as-chairperson-of-state-child-rights-panel/ar-AA1tBBVY?ocid=BingNewsVerp"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya CM's sister takes charge as chairperson of state child rights panel (msn.com)
+          </h5>
+          <small class="text-muted">2025</small>
+        </a>
+        <a href="https://meghalayamonitor.com/agatha-assumes-office-as-child-rights-panel-chief-two-months-after-appointment/" target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Agatha assumes office as child rights panel chief two months after appointment -
+            Meghalaya Monitor</h5>
+          <small class="text-muted">2025</small>
+        </a>
+
+        <!-- 2024 -->
+
+        <a href="https://theshillongtimes.com/2024/03/04/pocso-act-in-khasi-hailed/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">POCSO Act in Khasi hailed | The Shillong Times</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://mawphor.com/haduh-2566-ngut-ki-khynnah-ba-shah-leh-bor-ha-meghalaya/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">Haduh 2566 ngut ki Khynnah ba shah leh bor ha Meghalaya - Mawphor</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://www.sentinelassam.com/north-east-india-news/meghalaya-news/meghalaya-sensitization-workshop-held-on-prevention-and-combating-child-trafficking"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya: Sensitization workshop held on ‘Prevention and Combating Child Trafficking’
+            (sentinelassam.com)</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://meghalayadaily.in/2024/06/29/world-day-against-human-trafficking-national-commission-for-protection-of-child-rights-ncpcr/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">World Day Against Human Trafficking, National Commission for Protection of Child Rights
+            (NCPCR) - MEGHALAYA DAILY</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://meghalaya.gov.in/sites/default/files/press_release/Press_Release_262.pdf" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">Press_Release_262.pdf (meghalaya.gov.in)</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://www.google.com/url?sa=D&q=https://highlandpost.com/workshop-held-at-ampati-to-sensitise-stakeholders-on-child-trafficking/&ust=1741669320000000&usg=AOvVaw24FkJXb-EC9mN8Jn9GGniC&hl=en-GB&source=gmail"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Workshop held at Ampati to sensitise stakeholders on child trafficking | Highland Post
+          </h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://theshillongtimes.com/2024/06/21/stakeholders-discuss-ways-to-tackle-child-trafficking/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Stakeholders discuss ways to tackle child trafficking | The Shillong Times</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://hubnetwork.in/ncpcr-conducts-sensitization-workshop-on-child-trafficking-in-ampati/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">NCPCR conducts sensitization workshop on child trafficking in Ampati (hubnetwork.in)
+          </h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://theshillongtimes.com/2024/12/10/mhrc-celebrates-76th-year-of-udhr/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">MHRC celebrates 76th year of UDHR | The Shillong Times</h5>
+          <small class="text-muted">2024</small>
+        </a>
+        <a href="https://www.eastmojo.com/meghalaya/2024/03/01/meghalaya-commission-reports-rise-in-pocso-cases-during-pandemic/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">https://www.eastmojo.com/meghalaya/2024/03/01/meghalaya-commission-reports-rise-in-
+            pocso-cases-during-pandemic/</h5>
+          <small class="text-muted">2024</small>
+        </a>
+
+        <!-- 2023 -->
+
+        <a href="https://www.facebook.com/watch/?v=5893236117465228" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">The Meghalaya police organised a one-day state-level conference on anti-human
+            trafficking
+            at the State Convention Centre here on Friday. The objective of... | By DD News Meghalaya | Facebook</h5>
+          <small class="text-muted">2023</small>
+        </a>
+        <a href="https://mawphor.com/sngew-shyrkhei-khynnah-9-10-snem-ki-la-tip-lut-ia-ki-kam-jaboh-lap-ka-child-rights-commission/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Sngew shyrkhei, khynnah 9, 10 snem ki la tip lut ïa ki kam jaboh, lap ka Child Rights
+            Commission - Mawphor</h5>
+          <small class="text-muted">2023</small>
+        </a>
+
+        <!-- 2022 -->
+
+        <a href="https://www.indiatimes.com/news/india/meghalaya-hc-surprise-checks-army-vehicles-allegations-drug-transport-565846.html"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Surprise Checks On Army Vehicles Amid Allegations Of Drug Transport: What Meghalaya HC
+            Ordered (indiatimes.com)</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://cms.thewire.in/law/army-surprise-checks-meghalaya-high-court-drug-trafficking" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">Drug Trafficking: Meghalaya HC Suggests Army Conduct Surprise Checks on Its Vehicles –
+            The
+            Wire</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://theshillongtimes.com/2022/06/14/mscpcr-awaits-report-on-filicide/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">MSCPCR awaits report on filicide | The Shillong Times</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://theshillongtimes.com/2022/06/20/rs-5-lakh-ex-gratia-granted-for-family-of-2-minors-killed-by-father/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Rs 5 lakh ex-gratia granted for family of 2 minors ‘killed’ by father | The Shillong
+            Times</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://meghalayamonitor.com/mother-of-minor-children-in-nongrah-to-get-ex-gratia-of-rs-5-lakh/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Mother of minor children in Nongrah to get ex gratia of Rs 5 lakh - Meghalaya Monitor
+          </h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://neindiabroadcast.com/2022/03/30/media-also-plays-an-important-role-in-highlighting-the-gaps-in-measures-taken-for-the-prevention-of-crime-against-children-iamon-m-syiem/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Media also plays an important role in highlighting the gaps in measures taken for the
+            prevention of crime against children: Iamon M Syiem - NE India Broadcast</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://theshillongtimes.com/2022/03/30/role-of-media-in-helping-child-abuse-victims-vital/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">‘Role of media in helping child abuse victims vital’ | The Shillong Times</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.thesangaiexpress.com/Encyc/2022/3/29/Newmai-News-NetworkShillong-Mar-29-The-National-Commission-for-Protection-of-Child-Rights-NCPCR.html"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Shillong hosts workshop on child rights - The Sangai Express - Largest Circulated
+            NewsPaper
+            in Manipur</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.syllad.com/joint-efforts-of-community-govt-emphasized-to-tackle-child-trafficking/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Joint efforts of Community &amp; Govt emphasized to tackle child trafficking
+            (syllad.com)</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.facebook.com/NCPCR.Official/posts/chairperson-smt-iamon-m-syiem-meghalaya-state-commission-for-protection-of-child/3150244731919477/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Chairperson, Smt. Iamon M Syiem, Meghalaya State Commission for Protection of Child
+            Rights (MSCPCR) addresses the regional level orientation workshop of NE States on child rights. | Facebook
+          </h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.facebook.com/lbbhss/posts/seminar-on-protection-of-child-rights-by-mscpcr/591821716078533/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Seminar on protection of child rights by MSCPCR</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.facebook.com/yutipnews/posts/i-kong-iamon-m-syiem-iba-dei-i-chairperson-jong-ka-meghalaya-state-commission-fo/1500050800443153/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">I kong Iamon M. Syiem iba dei i Chairperson jong ka Meghalaya State Commission for
+            Protection of Child Rights (MSCPCR)</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.eastmojo.com/meghalaya/2022/03/29/meghalaya-1-day-workshop-for-ne-scribes-on-child-rights/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Chairp... - National Commission for Protection of Child Rights | Facebook</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://theshillongtimes.com/2022/10/09/workshop-on-central-programmes-for-welfare-safety-of-children/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Chairp... - National Commission for Protection of Child Rights | Facebook</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://theshillongtimes.com/2022/04/28/a-weakened-shield-paves-way-for-predators-to-prey-on-kids/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">A weakened ‘shield’ paves way for predators to prey on kids | The Shillong Times</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.facebook.com/DisabilityAffairsMeghalaya/posts/the-issue-of-child-protection-and-rights-has-always-been-the-focus-of-the-srcda-/193991566293278/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">The issue of child protection and rights has always been the focus of the SRCDA,
+            Shillong since inception.</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://themeghalayan.com/mscpcr-urged-for-stringent-action-against-meecl/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">MSCPCR urged for stringent action against MeECL</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.syllad.com/meghalaya-students-got-pms-authored-book-entitled-exam-warriors/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya students got PM’s authored book entitled Exam Warriors </h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.syllad.com/mscpcr-condemns-gang-rape-on-minors/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">MSCPCR condemns gang rape on minors</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://meghalayanews24.com/mscpcr-launches-youtube-channel/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">MSCPCR launches youtube channel</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://morungexpress.com/meghalaya-hc-orders-surprise-checks-on-army-vehicles-in-light-of-allegations-of-drug-transport"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya HC orders surprise checks on Army vehicles in light of allegations of drug
+            transport </h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://helloshillong.in/meghalaya-assembly-committee-on-empowerment-of-women-macew-informed-that-the-state-government-has-decided-to-provide-an-ex-gratia-payment-to-the-tune-of-rs-to-the-family/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya Assembly Committee on Empowerment of Women (MACEW) informed that the
+            State Government has decided to provide an ex-gratia payment to the tune of Rs to the family</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.thesangaiexpress.com/Encyc/2022/3/29/Newmai-News-NetworkShillong-Mar-29-The-National-Commission-for-Protection-of-Child-Rights-NCPCR.amp.html"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Shillong hosts workshop on child rights</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://meghalaya.gov.in/sites/default/files/circulars/Notification_ML_15_2014_Pt_232.pdf"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">NOTIFICATION ON MEDIA ETHICS CODE</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="http://www.megipr.gov.in/pr.asp?dt=29-03-2022" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">NCPCR ORGANISES WORKSHOP ON CHILD RIGHTS FOR MEDIA PERSONNEL OF NE
+            STATES IN SHILLONG ON 29.03.2022</h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://www.summittimes.com/single-post/sikkim-team-attends-workshop-on-child-rights-for-journalists"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Sikkim team attends workshop on child rights for journalists </h5>
+          <small class="text-muted">2022</small>
+        </a>
+        <a href="https://meghalayamonitor.com/mother-of-minor-children-in-nongrah-to-get-ex-gratia-of-rs-5-lakh/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Mother of minor children in Nongrah to get ex gratia of Rs 5 lakh</h5>
+          <small class="text-muted">2022</small>
+        </a>
+
+        <!-- 2021 -->
+
+        <a href="https://northeastnetwork.org/online-interface-with-meghalaya-state-commission-for-protection-of-child-rights"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">NEN online interaction with MSCPCR</h5>
+          <small class="text-muted">2021</small>
+        </a>
+        <a href="https://www.eastmojo.com/meghalaya/2022/03/29/meghalaya-1-day-workshop-for-ne-scribes-on-child-rights/"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya: 1-day workshop for NE scribes on child rights</h5>
+          <small class="text-muted">2021</small>
+        </a>
+
+        <!-- 2017 -->
+
+        <a href="https://thenortheasttoday.com/states/meghalaya/meghalaya-mscprc-questions-julius-dorphangs-appointment-to/cid2548894.htm"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Meghalaya: MSCPCR questions Julius Dorphang’s appointment to Assembly panels</h5>
+          <small class="text-muted">2017</small>
+        </a>
+
+        <!-- 2015 -->
+
+        <a href="https://www.urupang.com/dawa-jaka-test-dna-ka-mscpcr-ha-ka-jylla/" target="_blank"
+          class="list-group-item list-group-item-action">
+          <h5 class="news-title">Dawa jaka test DNA ka MSCPCR ha ka jylla</h5>
+          <small class="text-muted">2015</small>
+        </a>
+
+        <!-- 2014 -->
+
+        <a href="https://www.business-standard.com/article/pti-stories/khagkongor-new-mscpcr-chief-114012701205_1.html"
+          target="_blank" class="list-group-item list-group-item-action">
+          <h5 class="news-title">Khagkongor new MSCPCR chief</h5>
+          <small class="text-muted">2014</small>
+        </a>
+        
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="security.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
