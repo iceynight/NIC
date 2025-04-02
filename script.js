@@ -202,30 +202,36 @@ const annualReports = [
 },
 {
   id: 4,
+  title: "Annual Report 2019-2020 (64.4 MB)",
+  thumbnail: "Annual Reports/2019-2020.png",
+  pdfUrl: "Annual Reports/Annual Report 2019-2020.pdf"
+},
+{
+  id: 5,
   title: "Annual Report 2018-2019 (62.6 MB)",
   thumbnail: "Annual Reports/2018-2019.png",
   pdfUrl: "Annual Reports/5 Annual Report MSCPCR 2018_2019.pdf"
 },
 {
-  id: 5,
+  id: 6,
   title: "Annual Report 2017-2018 (15.4 MB)",
   thumbnail: "Annual Reports/2017-2018.png",
   pdfUrl: "Annual Reports/4 Annual Report MSCPCR 2017_2018.pdf"
 },
 {
-  id: 6,
+  id: 7,
   title: "Annual Report 2016-2017 (4.4 MB)",
   thumbnail: "Annual Reports/2016-2017.png",
   pdfUrl: "Annual Reports/3 Annual Report MSCPCR 2016_2017.pdf"
 },
 {
-  id: 7,
+  id: 8,
   title: "Annual Report 2015-2016 (1.4 MB)",
   thumbnail: "Annual Reports/2015-2016.png",
   pdfUrl: "Annual Reports/2 Annual Report MSCPCR 2015_2016.pdf"
 },
 {
-  id: 8,
+  id: 9,
   title: "Annual Report 2014-2015 (1.6 MB)",
   thumbnail: "Annual Reports/2014-2015.png",
   pdfUrl: "Annual Reports/1 Annual Report MSCPCR 2014_2015.pdf"
